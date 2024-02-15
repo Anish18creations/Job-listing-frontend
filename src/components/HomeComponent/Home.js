@@ -224,14 +224,14 @@ export default function Home() {
                             }
                           })
                         }}>Edit job</div>
-                        <a href={`http://localhost:3000/job-info/${data._id}`} target="_blank" rel="noreferrer"
+                        <a href={`https://frontend-git-main-anish18creations.vercel.app/${data._id}`} target="_blank" rel="noreferrer"
                           style={{ textDecoration: 'none', cursor: 'default' }}>
 
                           <div className={styles.details}>View details</div></a>
                       </>
                       :
                       <>
-                        <a href={`http://localhost:3000/job-info/${data._id}`} target="_blank" rel="noreferrer"
+                        <a href={`https://frontend-git-main-anish18creations.vercel.app/${data._id}`} target="_blank" rel="noreferrer"
                           style={{ textDecoration: 'none', cursor: 'default' }}>
 
                           <div className={styles.details} style={{ marginTop: '-6vh' }}>View details</div></a>
