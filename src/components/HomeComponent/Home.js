@@ -224,7 +224,7 @@ export default function Home() {
                             }
                           })
                         }}>Edit job</div>
-                        <a href={`https://frontend-git-main-anish18creations.vercel.app/job-info/${data._id}`} 
+                        <a href={`https://job-listing-frontend-gamma.vercel.app/job-info/${data._id}`} 
                           target="_blank" 
                           rel="noreferrer"
                           style={{ textDecoration: 'none', cursor: 'default' }}>
@@ -233,7 +233,7 @@ export default function Home() {
                       </>
                       :
                       <>
-                        <a href={`https://frontend-git-main-anish18creations.vercel.app/job-info/${data._id}`} 
+                        <a href={`https://job-listing-frontend-gamma.vercel.app/job-info/${data._id}`} 
                           target="_blank" 
                           rel="noreferrer"
                           style={{ textDecoration: 'none', cursor: 'default' }}>
