@@ -8,7 +8,6 @@ export const registerUser = async({ name, email, mobile, password }) => {
         const response = await axios.post(requestUrl, requestPayload);
         return response.data;
     } catch (error) {
-        //console.log(error);
         return;
     }
 }
@@ -20,7 +19,6 @@ export const loginUser = async({ email, password }) => {
         const response = await axios.post(requestUrl, requestPayload);
         return response.data;
     } catch (error) {
-        //console.log(error);
         return;
     }
 }
