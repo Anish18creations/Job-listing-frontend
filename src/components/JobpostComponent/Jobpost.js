@@ -77,20 +77,20 @@ export default function Jobpost() {
       const response = await editJobPost(state.id, { ...formdata });
       if (response)
         toast.success("Job Details have been edited", { duration: 2000 });
-      setTimeout(edit, 3000);
+        setTimeout(goback, 3000);
     }
     else {
       const response = await createJobPost({ ...formdata });
       if (response)
         toast.success("New job has been created", { duration: 2000 });
-      setTimeout(success, 3000);
+        setTimeout(success, 3000);
     }
 
   }
 
-  const edit = () => {
+  /*const edit = () => {
     navigate(`/job-info/${state.id}`);
-  }
+  }*/
 
   const success = () => {
     navigate("/");
