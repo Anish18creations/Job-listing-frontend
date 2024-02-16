@@ -21,14 +21,9 @@ export const getalljobs = async ({ skills, title }) => {
         }
 
         const response = await axios.get(requestUrl);
-        console.log(response);
         return response.data.data;
     } catch (error) {
-        console.log(error.response.data);
         toast.error("No such jobs found based on the given filter , try again!!", { duration: 3000 });
-        <Toaster>
-            toast('Job with the given filters cannot be fetched');
-        </Toaster>
     }
 }
 
@@ -40,8 +35,9 @@ export const getjobinfo = async (jobid) => {
         console.log(response);
         return response.data.data;
     } catch (error) {
-        console.log(error);
+        //console.log(error);
         //toast message(another form of alert message)
+        return;
     }
 }
 
@@ -61,7 +57,8 @@ export const createJobPost = async ({ companyName, title, description, logourl,
         const response = await axios.post(requestUrl, reqpayload);
         return response.data;
     } catch (error) {
-        console.log(error);
+        //console.log(error);
+        return;
     }
 
 }
@@ -82,7 +79,8 @@ export const editJobPost = async (jobid, { companyName, title, description, logo
         const response = await axios.put(requestUrl, reqpayload);
         return response.data;
     } catch (error) {
-        console.log(error);
+        //console.log(error);
+        return;
     }
 
 }

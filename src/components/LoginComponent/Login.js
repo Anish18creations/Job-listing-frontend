@@ -18,22 +18,22 @@ export default function Login() {
     setdata({ ...data, [e.target.name]: e.target.value });
   }
 
-  const handlesubmit = async(e) => {
+  const handlesubmit = async (e) => {
     e.preventDefault();
     if (!data.email || !data.password) {
       toast.error('Please fill in all the fields', { duration: 1000 });
       return;
     }
 
-    const response = await loginUser({...data});
-    if(response){
-      localStorage.setItem("token" , response.token);
+    const response = await loginUser({ ...data });
+    if (response) {
+      localStorage.setItem("token", response.token);
       localStorage.setItem("username", response.name);
       /*toast.success('Congrats! User logged in successfully', { duration: 2000 })
       setTimeout(success,3000);*/
       navigate("/");
     }
-    else{
+    else {
       toast.error('Invalid credentials , User cannot be logged in!!', { duration: 1000 });
     }
 

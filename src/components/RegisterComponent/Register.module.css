@@ -1,61 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap');
 
-.image{
+.image {
     position: absolute;
     left: 55vw;
     width: 45vw;
     height: 100vh;
 }
 
-.jobfindertext{
+.jobfindertext {
     position: absolute;
     left: 63vw;
     top: 5vh;
-    font-family: 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 2.5rem;
     font-weight: 500;
     letter-spacing: 0em;
     color: #FFFFFF;
 }
 
-.createaccount{
+.createaccount {
     position: absolute;
     top: 15vh;
     left: 5vw;
-    font-family: 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     letter-spacing: 0.05em;
     color: #000000;
 }
 
-.personaljobfinder{
+.personaljobfinder {
     position: absolute;
     top: 25vh;
     left: 5vw;
-    font-family : 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0em;
     color: #525252;
 }
 
-.checkbox_text{
+.checkbox_text {
     position: absolute;
     bottom: 20vh;
     left: 7vw;
-    font-family : 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.05rem;
     font-weight: 500;
     letter-spacing: 0em;
     color: #525252;
 }
 
-.createaccountbox{
+.createaccountbox {
     position: absolute;
     bottom: 7vh;
     left: 6vw;
-    font-family : 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.7rem;
     font-weight: 700;
     letter-spacing: 0.08em;
@@ -67,21 +67,21 @@
     color: #FFFFFF;
 }
 
-.already{
+.already {
     position: absolute;
     bottom: 2vh;
     left: 6vw;
-    font-family : 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 0.001em;
     color: #525252;
 }
 
-.name{
+.name {
     position: absolute;
-    top : 35vh;
-    left : 5vw;
+    top: 35vh;
+    left: 5vw;
     width: 30vw;
     height: 6vh;
     border-radius: 0.3rem;
@@ -89,7 +89,7 @@
     border-width: 0.125rem;
     border-color: #C2C2C2;
     background: #FFFFFF;
-    font-family : 'DM Sans' , sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 1.25rem;
     color: #525252;
@@ -101,10 +101,10 @@
     position: absolute;
     width: 2vw;
     height: 2.1vh;
-    left : 5vw;
-    top : 77.2vh;
+    left: 5vw;
+    top: 77.2vh;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     accent-color: #858585;
 }

@@ -24,23 +24,11 @@ export default function Jobinfo({ }) {
   const fetchjobdetailsbyid = async () => {
     const jobid = window.location.pathname?.split("/").slice(-1)[0];
     console.log(jobid);
-    if (!jobid)
-    {
+    if (!jobid) {
       return;
     }
-      
-    /*else
-    {
-      toast.error("Please provide correct job id to view details!!", { duration: 2000 });
-      setTimeout(success, 3000);
-    }*/
-      
+
     const response = await getjobinfo(jobid);
-    /*if(typeof response == String || response == null)
-    {
-      toast.error("Please provide correct job id to view details!!", { duration: 2000 });
-      setTimeout(success, 3000);
-    }*/
     console.log(response);
     setdata(response);
     setk(response.skills);
@@ -131,7 +119,7 @@ export default function Jobinfo({ }) {
                 {data.about}
               </div>
 
-              <div className={styles.company} style={{marginTop:'0vh'}}>
+              <div className={styles.company} style={{ marginTop: '0vh' }}>
                 About the  job/internship
               </div>
 
@@ -139,18 +127,18 @@ export default function Jobinfo({ }) {
                 {data.description}
               </div>
 
-              <div className={styles.company} style={{marginTop:'19vh'}}>
+              <div className={styles.company} style={{ marginTop: '19vh' }}>
                 Skill(s) required
               </div>
 
               <div className={styles.showskills}>
-              {k.map((skill, index) => {
-                return (
-                  <span key={index} className={styles.skills}>
-                    {skill}&nbsp;
-                  </span>
-                )
-              })}
+                {k.map((skill, index) => {
+                  return (
+                    <span key={index} className={styles.skills}>
+                      {skill}&nbsp;
+                    </span>
+                  )
+                })}
               </div>
 
               <div className={styles.company}>

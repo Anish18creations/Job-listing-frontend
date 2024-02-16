@@ -20,7 +20,7 @@ export default function Register() {
     setdata({ ...data, [e.target.name]: e.target.value });
   }
 
-  const handlesubmit = async(e) => {
+  const handlesubmit = async (e) => {
     e.preventDefault();
     if (!data.name || !data.email || !data.mobile || !data.password) {
       toast.error('Please fill in all the fields', { duration: 1000 });
@@ -33,12 +33,12 @@ export default function Register() {
       return;
     }
 
-    const response = await registerUser({...data});
-    if(response){
-      localStorage.setItem("token" , response.token);
+    const response = await registerUser({ ...data });
+    if (response) {
+      localStorage.setItem("token", response.token);
       localStorage.setItem("username", response.name);
       toast.success('Congrats! User registered successfully', { duration: 2000 })
-      setTimeout(success,3000);
+      setTimeout(success, 3000);
     }
   }
 
